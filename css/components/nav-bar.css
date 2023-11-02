@@ -1,0 +1,51 @@
+.nav {
+    background-color: #F9F9FA;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    /* */
+    border-top: 1.2px solid rgba(117, 117, 117, 0.3);
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav__link{
+    color: #2e363e;
+    position: relative;
+}
+
+
+.nav__notification {
+    background-color: tomato;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px; /*사각형을 원으로 만들고 싶다면? boder-radius is half of the square's width*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+
+    position: absolute; /*가장 가까운 relative 부모를 기준으로 움직이므로 span의 부모인 a.nav__link를 relative로 만들어야 한다.*/
+    bottom: 16px;
+    right: -10px;
+}
+
+
+.nav__dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+
+    top: -12px;
+    right: -6px;
+}

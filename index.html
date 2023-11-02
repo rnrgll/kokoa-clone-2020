@@ -31,15 +31,39 @@
       </p>
     </header>
 
-    <form id="login-form" action="">
+    <!--form attributes
+        1. action : 어떤 페이지로 데이터를 보낼지 결정할 수 있음. friends.html로 보내보자.
+        2. method : 두 가지 방식 존재(POST, GET). 
+          1) POST : 현재 프로젝트에서는 POST 사용 불가능. POST는 백엔드 서버에 정보를 전송하는 방식이기 때문.
+          2) GET : 보안에 취약. username과 password 같은 정보는 GET으로 보내면 안된다. GET은 URL에 포함되어도 상관 없는 정보들을 보내는 방식이다.
+    -->
+    <form id="login-form" action="friends.html" method="get">
       <input
         class="login-form__input"
         type="text"
         placeholder="Email or phone number"
+        name="username"
       />
-      <input class="login-form__input" type="password" placeholder="Password" />
+      <input
+        class="login-form__input"
+        type="password"
+        placeholder="Password"
+        name="password"
+      />
       <input class="login-form__btn" type="submit" value="Log In" />
-      <input class="login-form__btn" type="button" value="Sign Up" />
+      <input
+        class="login-form__btn"
+        type="button"
+        value="Sign Up"
+        onclick="location.href='signup.html'"
+      />
+      <!--button onclick시 페이지 이동 방법
+        1. 현재 페이지에서 다른 페이지로 이동하기 : onclick ="location.href='index.html'"
+        2. 새 페이지에서 다른 페이지 열기 : onclick ="window.open('index.html')"
+        3. 현재 페이지 새로고침 : onclick ="location.reload();"
+        4. 뒤로 가기 : onclick ="history.back();"
+        5. 뒤로 1번 가기 : onclick ="history.go(-1);"
+      -->
       <a class="login-form__a" href="">Find Kokoa Account or Password</a>
     </form>
 
