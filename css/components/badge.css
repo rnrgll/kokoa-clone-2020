@@ -1,0 +1,12 @@
+.badge {
+    background-color: tomato;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px; /*사각형을 원으로 만들고 싶다면? boder-radius is half of the square's width*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}

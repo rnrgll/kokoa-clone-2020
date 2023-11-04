@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>Friends - Kokoa Clone</title>
+    <title>Chat - Kokoa Clone</title>
   </head>
   <body>
     <!--1. 상태바 만들기-->
@@ -25,64 +25,33 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
         <span><i class="fa-solid fa-music fa-lg"></i></span>
         <span><i class="fa-solid fa-gear fa-lg"></i></span>
       </div>
     </header>
 
-    <a id="friends-display-link" href="">
-      <i class="fa-solid fa-circle-info" style="color: var(--light-gray)"></i>
-      Friends' Names Display
-      <i class="fa-solid fa-angle-right" style="color: var(--light-gray)"></i>
-    </a>
-
-    <main class="friends-screen main-screen">
+    <main class="main-screen chat-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
-            class="user-component__avatar user-component__avatar--xl"
-            src="https://avatars.githubusercontent.com/u/105702023?v=4"
+            class="user-component__avatar"
+            src="../images/kakakotalk_edge.png"
             alt="프로필 사진"
           />
           <div class="user-component__text">
-            <h4 class="user-component__title">Do Hyeon</h4>
-            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+            <h4 class="user-component__title">KakaoTalk</h4>
+            <h6 class="user-component__subtitle">
+              Please check My Kakao Account Info
+            </h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
-      </div>
-
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fa-solid fa-angle-up" style="color: var(--semi-gray)"></i>
-        </div>
-
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              class="user-component__avatar user-component__avatar--sm"
-              src="../images/kakaochannel_edge.png"
-              alt="프로필 사진"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i
-                class="fa-solid fa-angle-right"
-                style="color: var(--semi-gray)"
-              ></i>
-            </div>
-          </div>
+        <div class="user-component__column">
+          <span class="user-component__time">21:22</span>
+          <div class="user-component__notification badge">1</div>
         </div>
       </div>
     </main>
@@ -91,13 +60,13 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html">
-            <i class="fa-solid fa-user fa-2x"></i>
+            <i class="fa-regular fa-user fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chat.html">
             <span class="nav__notification badge">1</span>
-            <i class="fa-regular fa-comment fa-2x"></i>
+            <i class="fa-solid fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">

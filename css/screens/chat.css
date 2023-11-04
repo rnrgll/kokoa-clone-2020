@@ -1,0 +1,13 @@
+.chat-screen {
+    margin-top: 100px;
+}
+
+.user-component__column:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user-component__time{
+    margin-bottom: 10px;
+}

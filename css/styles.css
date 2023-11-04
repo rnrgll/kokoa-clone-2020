@@ -4,16 +4,22 @@
 
 /*Components*/
 @import "components/status-bar.css";
+@import "components/badge.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
-@import "components/friends.css";
 @import "components/user-component.css";
 /*Screens*/
 @import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/chat.css";
 
 body{
 	font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     margin: 0;
     color: var(--black);
+}
+
+.main-screen {
+    padding: var(--horizontal-space);
 }
