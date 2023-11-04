@@ -18,7 +18,7 @@
 }
 
 .nav__link{
-    color: #2e363e;
+    color: var(--deep-gray);
     position: relative;
 }
 
