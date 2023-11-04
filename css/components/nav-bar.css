@@ -29,12 +29,8 @@
     right: -10px;
 }
 
-
-.nav__dot {
-    width: 5px;
-    height: 5px;
-    border-radius: 2.5px;
-
+.nav__dot{
+    position: absolute;
     top: -12px;
     right: -6px;
 }
