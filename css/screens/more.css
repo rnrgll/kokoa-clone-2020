@@ -20,7 +20,7 @@
     position: relative;
 }
 
-.more-screen .icon-row__icon span {
+.more-screen .icon-row__icon > span {
     opacity: 0.7;
 }
 

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Settings - Kokoa Clone</title>
+  </head>
+  <body>
+    <!--1. 상태바 만들기-->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <!-- BEM(Blcok Element Modifier) : 부모와 자식을 명시한 클래스 이름을 사용한다 -->
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back()">
+          <i class="fa-solid fa-chevron-left fa-xl"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__column">
+        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+      </div>
+    </header>
+
+    <main class="main-screen settings-screen">
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>Notices</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-flask"></i>
+            <span>Kakao Lab</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Version</span>
+          </div>
+          <div class="settings__setting-column">Latest Version</div>
+        </li>
+      </ul>
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-lock"></i>
+            <span>Privacy</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-regular fa-bell"></i>
+            <span>Notification</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-regular fa-user"></i>
+            <span>Friends</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-regular fa-comment"></i>
+            <span>Chats</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Display</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-brush"></i>
+            <span>Themes</span>
+          </div>
+          <div class="settings__setting-column">Default theme</div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+      </ul>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fa-regular fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chat.html">
+            <!-- <span class="nav__notification badge">1</span> -->
+            <i class="fa-regular fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__dot point"> </span>
+            <!--nav_notification 클래스를 사용하여 스타일을 적용하고(코드 중복 작성 파히기) 새 클래서 dot을 부여하여 위치와 크기만 변경-->
+            <i class="fa-solid fa-ellipsis"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/afee348a73.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
