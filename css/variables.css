@@ -5,4 +5,6 @@
     --light-gray:#d6d6d6;
     --semi-gray:#a3a3a3;
     --horizontal-space: 25px;
+    /*border가 자주 사용되므로 변수로 만든다.*/
+    --main-border:1px solid rgba(0, 0, 0, 0.15);
 }

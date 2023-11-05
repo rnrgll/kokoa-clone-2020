@@ -36,23 +36,87 @@
     </header>
 
     <main class="main-screen chat-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__avatar"
-            src="../images/kakakotalk_edge.png"
-            alt="프로필 사진"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">KakaoTalk</h4>
-            <h6 class="user-component__subtitle">
-              Please check My Kakao Account Info
-            </h6>
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-qrcode"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-address-book"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-fingerprint"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span>You have no recommended friends.</span>
+      </div>
+
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span
+            >Go to Openchat Home
+            <i class="fa-solid fa-angle-right"></i>
+          </span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#BTS</h5>
+            <h6 class="open-post__hashtags">#BTS#ARMY#FRIENDS</h6>
+            <div class="open-post__members">
+              <img src="../images/profile1.jpeg" alt="" />
+              <span class="open-post__members-count">802 members</span>
+              <div class="divder"></div>
+              <span class="open-post__members-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBw1TPc1VVVc4x9gwidt5by2gCUf4UAN0TYQ&usqp=CAU"
+                alt=""
+              />
+              <div class="open-post__heart">
+                <i class="fa-solid fa-heart"></i>
+                <span>326</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">21:22</span>
-          <div class="user-component__notification badge">1</div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">Bts Gang~</h5>
+            <h6 class="open-post__hashtags">
+              #englishonly #ipurpleyou #jimin #taeta...
+            </h6>
+            <div class="open-post__members">
+              <img src="../images/profile2.jpeg" alt="" />
+              <span class="open-post__members-count">299 members</span>
+              <div class="divder"></div>
+              <span class="open-post__members-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlj5gAM00IXxJKEgFJ9DirQ4VA41jRe9OwVg&usqp=CAU"
+                alt=""
+              />
+              <div class="open-post__heart">
+                <i class="fa-solid fa-heart"></i>
+                <span>215</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -61,25 +125,25 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html">
-            <i class="fa-regular fa-user fa-2x"></i>
+            <i class="fa-regular fa-user"></i>
           </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chat.html">
-            <span class="nav__notification badge">1</span>
-            <i class="fa-regular fa-comment fa-2x"></i>
+            <!-- <span class="nav__notification badge">1</span> -->
+            <i class="fa-regular fa-comment"></i>
           </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="find.html">
-            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
           </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="more.html">
             <span class="nav__dot point"> </span>
             <!--nav_notification 클래스를 사용하여 스타일을 적용하고(코드 중복 작성 파히기) 새 클래서 dot을 부여하여 위치와 크기만 변경-->
-            <i class="fa-solid fa-ellipsis fa-2x"></i>
+            <i class="fa-solid fa-ellipsis"></i>
           </a>
         </li>
       </ul>
